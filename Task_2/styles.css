@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #0057d8;
+  --secondary-color: #f4f6f8;
+  --text-color: #333;
+  --header-text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--header-text);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background: var(--header-text);
+  color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav {
+  padding: 1rem 2rem;
+  background-color: #e9edf0;
+}
+
+#timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+#timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-event {
+  padding: 1rem;
+  background: white;
+  position: relative;
+  border-radius: 6px;
+  width: 45%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-event .event-date {
+  font-weight: bold;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-event .event-title {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.timeline-event .event-title:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.timeline-event.left {
+  left: 0;
+}
+
+.timeline-event.right {
+  left: 55%;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  top: 15px;
+  z-index: 1;
+}
+
+.timeline-event.right::before {
+  left: -8px;
+}
+
+@media screen and (max-width: 768px) {
+  #timeline::after {
+    left: 20px;
+  }
+
+  .timeline-event {
+    width: calc(100% - 40px);
+    left: 40px !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-event::before {
+    left: -28px !important;
+  }
+}
