@@ -13,9 +13,20 @@ An index.html containing:
 - A `<section id="timeline">` where event markers will live.
 - An empty `<div id="modal">` for future pop‑ups. 
 Semantic tags for main content (`<main>`, `<article>`, `<figure>`, etc.). 
-A basic README.md with project title and stage-1 description. 
+A basic README.md with project title and stage-1 description.
 
-Next stages will include:
-- Styling with CSS
-- Dynamic event rendering with JavaScript
-- Filtering and modal functionality
+## 📚 Task 2: CSS and Preprocessors
+
+Styling HTML into a responsive, polished layout.  
+A `styles.css` (or SCSS) implementing:
+
+- Responsive layout using Flexbox or CSS Grid for the timeline.
+- Header styling, typography, and colour scheme.
+- Placeholder styles for event markers (e.g. dots, labels).
+- Modal base styles (hidden by default).
+- Ensure your design adapts at breakpoints:
+  - **Mobile** (<768px)
+  - **Tablet** (768–1023px)
+  - **Desktop** (≥1024px)
+
+  
