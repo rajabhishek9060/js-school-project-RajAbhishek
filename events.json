@@ -1,0 +1,44 @@
+[
+  {
+    "date": "5 August 2025, 18:30 IST",
+    "title": "HTML. The Foundations of Web Design",
+    "description": "Learn the basics of HTML structure, tags, and best practices for building clean web pages.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    "category": "Webinar"
+  },
+  {
+    "date": "7 August 2025, 18:30 IST",
+    "title": "CSS and Preprocessors",
+    "description": "Dive into CSS, SASS, and LESS for styling websites efficiently and responsively.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    "category": "Webinar"
+  },
+  {
+    "date": "12 August 2025, 18:30 IST",
+    "title": "JavaScript Fundamentals. Dynamic Web Development",
+    "description": "Understand JavaScript essentials to create interactive and dynamic user experiences.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "category": "Webinar"
+  },
+  {
+    "date": "14 August 2025, 18:30 IST",
+    "title": "TypeScript. Fundamentals",
+    "description": "Learn the TypeScript language to write safer, more maintainable JavaScript code.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    "category": "Webinar"
+  },
+  {
+    "date": "19 August 2025, 18:30 IST",
+    "title": "React. Building Dynamic User Interfaces",
+    "description": "Build reusable UI components and manage state with React.js.",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    "category": "Webinar"
+  },
+  {
+    "date": "21 August 2025, 18:30 IST",
+    "title": "Web Accessibility — Designing for Everyone",
+    "description": "Learn to design inclusive websites for all users, including those with disabilities.",
+    "imageURL": "https://pinkdogdigital.com/wp-content/uploads/2024/04/The-Role-of-Accessibility-in-Modern-Web-Design.jpg",
+    "category": "Webinar"
+  }
+]
