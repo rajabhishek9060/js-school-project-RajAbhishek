@@ -1,0 +1,24 @@
+/* Import existing styles */
+@import url('../../styles.css');
+
+/* Ensure React-specific styles */
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #e74c3c;
+}
