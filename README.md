@@ -52,3 +52,35 @@ Adding TypeScript to the project for type safety and better development experien
   - Use ES modules: separate `fetcher.ts`, `renderer.ts`, `modal.ts`, etc. 
 - Add build scripts (tsc or via bundler) to compile TS → JS into a dist/ folder. 
 - Verify the app still works in the browser using the compiled JS. 
+
+## 📦 Task 5: React. Building Dynamic User Interfaces
+Adding React to the project for building dynamic user interfaces.
+### Features in this stage:
+- Rebuild the UI as a React application. 
+- Bootstrap with Vite (React + TypeScript template). 
+- Create components: 
+  - `<Header>` (logo + theme switch). 
+  - `<Timeline>` that maps over event data and renders `<EventMarker>`. 
+  - `<EventMarker>` for each year/title dot. 
+  - `<EventModal>` for detailed view (use React Portal if desired). 
+  - Optional `<FilterPanel>` for future filters/bookmarks. 
+- Implement state with hooks (useState, useEffect) to load data and control modal visibility. 
+- Maintain styling: import your CSS or migrate to CSS Modules / styled-components. 
+
+## 📦 Task 6: Web Accessibility – Designing for Everyone
+Adding accessibility features to ensure the app is usable by everyone, including those with disabilities.
+### Features in this stage:
+- Ensure your app is accessible for users with disabilities. 
+- Add proper ARIA roles and attributes to elements: 
+  - Make sure that modal is accessible (either use role="dialog" on the modal or use `<dialog>` tag that has good browser support now). 
+  - aria-current or similar on the active timeline marker. 
+  - ... 
+- Manage focus: 
+  - Trap focus inside the modal when open. 
+  - Return focus to the triggering marker on close. 
+- Ensure keyboard navigation: 
+  - Timeline markers reachable via Tab/Arrow keys. 
+  - Modal closable via Esc. 
+- Verify colour contrast meets WCAG AA (contrast ratio ≥4.5:1 for text). 
+- Ensure other WCAG requirements are met. 
+- Document your accessibility changes in ACCESSIBILITY.md. 

@@ -17,15 +17,18 @@ function App() {
   const { events, loading, error } = useEvents();
   const [selectedEvent, setSelectedEvent] = useState<TimelineEvent | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [triggerElement, setTriggerElement] = useState<HTMLElement | null>(null);
 
-  const handleEventClick = (event: TimelineEvent) => {
+  const handleEventClick = (event: TimelineEvent, element: HTMLElement) => {
     setSelectedEvent(event);
+    setTriggerElement(element);
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setSelectedEvent(null);
+    setTriggerElement(null);
   };
 
   if (loading) return <div className="loading">Loading timeline...</div>;
@@ -40,7 +43,8 @@ function App() {
       <EventModal 
         event={selectedEvent} 
         isOpen={isModalOpen} 
-        onClose={handleCloseModal} 
+        onClose={handleCloseModal}
+        triggerElement={triggerElement}
       />
     </div>
   );
